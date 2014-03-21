@@ -22,7 +22,9 @@ if($islocked)
 //can be done by any of these three steps
 //$d->load_set_configuration($str1);
 //$d->load_text_configuration($str2,"merge");
-$d->load_xml_configuration($ftp_config->to_string(),"merge");
+$d->load_xml_configuration($str3,"merge");
+//when using xml and xmlbuilder class
+//$d->load_xml_configuration($ftp_config->to_string(),"merge");
 $d->commit();
 }
 
